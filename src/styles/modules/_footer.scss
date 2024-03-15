@@ -1,0 +1,53 @@
+.footer_container {
+  display: flex;
+  flex-direction: column;
+
+  > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 180px;
+    align-items: flex-start;
+    background-color: $c-black;
+    padding: 60px;
+
+    img {
+      height: 200px;
+      width: 200px;
+    }
+
+    .footer_nav {
+      li {
+        color: $c-white;
+        padding: 5px;
+        text-align: center;
+      }
+    }
+
+    .direction_list {
+      li {
+        p {
+          color: $c-white;
+          padding: 5px;
+          text-align: center;
+          font-size: 12px;
+        }
+        h4 {
+          color: $c-white;
+          text-align: center;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .footer_license {
+    padding: 10px;
+    p {
+      font-size: 10px;
+      color: $c-white;
+    }
+    background-color: $c-black-secondary;
+  }
+}

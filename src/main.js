@@ -1,7 +1,7 @@
-import './main.scss';
-import menu from './menu.json';
-import './assets/fonts/Marcheile-Bold-Condensed.woff';
-import './assets/fonts/Marcheile-Bold-Condensed.woff2';
+import './main.scss'
+import menu from './menu.json'
+import './assets/fonts/Marcheile-Bold-Condensed.woff'
+import './assets/fonts/Marcheile-Bold-Condensed.woff2'
 /* DO NOT EDIT ABOVE THIS LINE. You can start editing here. */
 
 /**
@@ -12,3 +12,4 @@ import './assets/fonts/Marcheile-Bold-Condensed.woff2';
  *
  */
 
+import './nav.js'
