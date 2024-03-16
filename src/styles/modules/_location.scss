@@ -1,0 +1,33 @@
+.location_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px !important;
+
+  gmp-map {
+    height: 500px;
+    width: 500px;
+  }
+
+  .location_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding-bottom: 30px;
+
+    h1 {
+      font-weight: bolder;
+    }
+    h2 {
+      font-weight: bolder;
+      padding-bottom: 20px;
+    }
+
+    button {
+      margin-top: 20px;
+    }
+  }
+}

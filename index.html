@@ -75,8 +75,23 @@
         <h1>Gastronomy section</h1>
       </section>
 
-      <section id="location_section">
-        <h1>Information/location section</h1>
+      <section id="location_section" class="location_section">
+        <div class="location_info">
+          <h1>Los pollos hermanos</h1>
+          <h2>Madrid</h2>
+          <p>Valenzuela, 4</p>
+          <button class="primary_btn">Book a table</button>
+        </div>
+        <gmp-map
+          center="40.41885757446289,-3.689152240753174"
+          zoom="17"
+          map-id="63b2b9e5d41c2b9c"
+        >
+          <gmp-advanced-marker
+            position="40.41885757446289,-3.689152240753174"
+            title="My location"
+          ></gmp-advanced-marker>
+        </gmp-map>
       </section>
 
       <section id="partners_section">
@@ -114,6 +129,10 @@
     </main>
 
     <!-- Do not edit below this line -->
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeMDzJPKs_xcxz0kI9qIwgDsF7bABSSkE&callback=console.debug&libraries=maps,marker&v=beta"
+    ></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
