@@ -14,37 +14,43 @@
       "menuId": 0,
       "menuName": "Chicken Burger",
       "menuDescription": "We placed 70 years of delicious into this sandwich. Taste our legendary hand-battered chicken.",
-      "menuPrice": 10.0
+      "menuPrice": 10.0,
+      "menuImageUrl": "src/assets/images/gastro/gasto-item-chicken-buger.jpg"
     },
     {
       "menuId": 1,
       "menuName": "Chicken wings",
       "menuDescription": "Get your fill with the Texas-Sized Meal: 3PC Legs & Thighs, 2 regular sides plus a signature jalapeño pepper.",
-      "menuPrice": 9.0
+      "menuPrice": 9.0,
+      "menuImageUrl": "src/assets/images/gastro/gasto-item-chicken-wings.jpg"
     },
     {
       "menuId": 2,
       "menuName": "Beer",
       "menuDescription": "Just simple and fresh beer.",
-      "menuPrice": 2.2
+      "menuPrice": 2.2,
+      "menuImageUrl": "src/assets/images/gastro/gasto-item-beer.jpg"
     },
     {
       "menuId": 3,
       "menuName": "French fries",
       "menuDescription": "Our fries are extra-long and center-cut from Grade A potatoes. They are cooked to a golden-brown crisp while remaining slightly soft in the middle. Every batch is cooked to order in our premium quality Canola Oil blend, then lightly salted immediately after leaving the fryer, so the taste melts onto each fry.",
-      "menuPrice": 12.0
+      "menuPrice": 12.0,
+      "menuImageUrl": "src/assets/images/gastro/gasto-item-french-fries.jpg"
     },
     {
       "menuId": 4,
       "menuName": "Milkshake",
       "menuDescription": "Our creamy Milkshakes are hand-spun the old-fashioned way each time and feature delicious. Topped with whipped cream and a cherry (except when served via delivery).",
-      "menuPrice": 1.8
+      "menuPrice": 1.8,
+      "menuImageUrl": "src/assets/images/gastro/gasto-item-milkshake.jpg"
     },
     {
       "menuId": 5,
       "menuName": "Fried chicken",
       "menuDescription": "We use premium chicken breast tenderloins to make the most tender chicken fingers possible. Our special marinade tenderizes the chicken, locks in moisture and adds flavor.",
-      "menuPrice": 8.0
+      "menuPrice": 8.0,
+      "menuImageUrl": "src/assets/images/gastro/gasto-item-fried-chicken.jpg"
     }
   ]
 }
