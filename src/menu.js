@@ -1,4 +1,6 @@
 import menuData from './menu.json'
+import { addCartProduct } from './cart'
+import { createHtmlPrimaryButton } from './utils'
 
 const INITIAL_SELECTED_PRODUCT = menuData.menuList[0]
 const selectedProductInformationElement = document.getElementById(
@@ -42,8 +44,12 @@ function setSelectedProduct(selectedProduct) {
   <h1>${selectedProduct.menuName}</h1>
   <p>${selectedProduct.menuDescription}</p>
   <h3>Price: <span>${selectedProduct.menuPrice}€</span></h3>
-  <button type='button' class='primary_btn' alt='add to cart'>Add to cart</button>
   `
+  selectedProductInformationElement.appendChild(
+    createHtmlPrimaryButton('Add to cart', () =>
+      addCartProduct(selectedProduct)
+    )
+  )
 
   selectedProductImageContainerElement.replaceChildren(productImageElement)
 }

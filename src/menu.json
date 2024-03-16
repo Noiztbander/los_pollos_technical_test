@@ -43,7 +43,8 @@
       "menuName": "Milkshake",
       "menuDescription": "Our creamy Milkshakes are hand-spun the old-fashioned way each time and feature delicious. Topped with whipped cream and a cherry (except when served via delivery).",
       "menuPrice": 1.8,
-      "menuImageUrl": "src/assets/images/gastro/gasto-item-milkshake.jpg"
+      "menuImageUrl": "src/assets/images/gastro/gasto-item-milkshake.jpg",
+      "menuDiscoundPercent": 20
     },
     {
       "menuId": 5,

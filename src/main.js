@@ -13,3 +13,4 @@ import './assets/fonts/Marcheile-Bold-Condensed.woff2'
 
 import './nav.js'
 import './menu.js'
+import './cart.js'
