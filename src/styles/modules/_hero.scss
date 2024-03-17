@@ -49,9 +49,8 @@ $video_height: 100vh;
 
     .expand_more--icon {
       position: absolute;
-      right: 0;
+      right: calc(50vw - 40px);
       bottom: 0;
-      padding-right: 30px;
       color: $c-white;
       font-size: 80px;
       animation: float-icon 2s ease infinite;
@@ -63,15 +62,26 @@ $video_height: 100vh;
       bottom: 0;
       padding: 30px;
       font-family: marcheile;
-      font-size: 150px;
       color: $c-white;
+      font-size: min(max(10vw, 12px), 150px);
     }
 
     .logo_container {
-      margin-top: 150px;
-      width: 400px;
-      height: 400px;
+      margin-top: 20vh;
+      width: 20vw;
+      height: 20vw;
+      min-width: 200px;
+      min-height: 200px;
       filter: drop-shadow(rgba(0, 0, 0, 0.3) 10px 30px 50px);
+    }
+  }
+
+  @media (width <= $v-max-mobile-width) {
+    .hero_section {
+      h1 {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }
@@ -79,17 +89,26 @@ $video_height: 100vh;
 .presentation_section {
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
   background-color: $c-white;
   padding: 50px;
   cursor: grab;
 
   h1 {
-    z-index: 100;
-    width: 50vw;
+    z-index: 10;
     font-family: marcheile;
-    font-size: 80px;
-    transform: translateY(-20px);
+    font-size: min(max(10vw, 12px), 130px);
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    z-index: 10;
+    font-family: $f-roboto-family;
+    font-weight: bolder;
+    font-size: min(max(8vw, 10px), 25px);
+    color: $c-chicken-secondary-light;
   }
 }

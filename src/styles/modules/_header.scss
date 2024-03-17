@@ -1,16 +1,19 @@
-$header-menu-height: 100px;
+:root {
+  --header-menu-height: 100px;
+}
 
 @keyframes open-menu {
   0% {
     transform: translateY(0px);
   }
   100% {
-    transform: translateY($header-menu-height);
+    transform: translateY(var(--header-menu-height));
   }
 }
+
 @keyframes close-menu {
   0% {
-    transform: translateY($header-menu-height);
+    transform: translateY(var(--header-menu-height));
   }
   100% {
     transform: translateY(0px);
@@ -83,8 +86,8 @@ $header-menu-height: 100px;
 .nav_menu {
   position: fixed;
   z-index: 500;
-  height: $header-menu-height;
-  top: -$header-menu-height;
+  height: var(--header-menu-height);
+  top: calc(var(--header-menu-height) * -1);
   background-color: $c-white;
   animation: close-menu 0.3s ease forwards;
   width: 100%;
@@ -103,6 +106,7 @@ $header-menu-height: 100px;
 
   ul {
     display: flex;
+    flex-direction: row;
     gap: 20px;
 
     li {
@@ -120,4 +124,21 @@ $header-menu-height: 100px;
 
 .nav_opened {
   animation: open-menu 0.3s ease forwards;
+}
+
+@media (width <= $v-max-mobile-width) {
+  :root {
+    --header-menu-height: 50vh;
+  }
+
+  .nav_menu {
+    flex-direction: column;
+    padding-left: unset;
+    justify-content: center;
+
+    ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 }

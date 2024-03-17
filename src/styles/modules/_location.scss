@@ -17,14 +17,16 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 35px;
     padding-bottom: 30px;
 
     h1 {
       font-family: marcheile;
-      font-size: 70px;
+      font-size: min(max(10vw, 12px), 70px);
       font-weight: bolder;
       color: $c-white;
       padding-bottom: 20px;
+      text-align: center;
     }
 
     h2 {
@@ -36,13 +38,25 @@
     }
 
     p {
-      padding: 10px 50px;
+      padding: 20px;
       color: $c-white;
       text-align: center;
     }
 
     button {
       margin-top: 20px;
+    }
+  }
+}
+
+@media (width <= $v-max-mobile-width) {
+  .location_section {
+    flex-direction: column;
+
+    gmp-map {
+      height: 500px;
+      min-width: 100%;
+      width: 100vw;
     }
   }
 }

@@ -9,15 +9,15 @@
 
   h1 {
     color: $c-chicken-secondary-dark;
-    font-size: 100px;
+    font-size: min(max(10vw, 12px), 70px);
     font-family: marcheile;
     padding-bottom: 30px;
-    transform: translateY(-10px);
+    text-align: center;
   }
 
   p {
-    color: $c-white;
-    color: $c-chicken-secondary-dark;
+    color: $c-black-secondary;
     font-weight: bold;
+    text-align: center;
   }
 }

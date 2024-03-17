@@ -45,4 +45,32 @@
       }
     }
   }
+
+  @media (width <= $v-max-mobile-width) {
+    .partners_info {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+
+      .partner_fever--container {
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 100px;
+          width: 200px;
+        }
+      }
+
+      .partner_lph--container {
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 150px;
+          width: 150px;
+        }
+      }
+    }
+  }
 }

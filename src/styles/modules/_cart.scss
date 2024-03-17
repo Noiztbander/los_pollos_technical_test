@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 20%;
-    padding: 100px;
+    padding: 50px;
     background-color: $c-white;
 
     div > h3 {
@@ -38,6 +38,7 @@
       font-family: marcheile;
       font-size: 70px;
       font-weight: bold;
+      text-align: center;
     }
 
     .cart_products--list {
@@ -96,10 +97,20 @@
       color: $c-chicken-primary-dark;
       font-weight: bolder;
       font-size: 50px;
+      text-align: center;
     }
 
     .pay_btn {
       margin-top: 20px;
+      width: 100%;
+    }
+  }
+
+  @media (width <= $v-max-mobile-width) {
+    .cart_info {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
     }
   }
 }
