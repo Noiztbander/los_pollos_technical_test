@@ -21,6 +21,7 @@ $video_height: 100vh;
   max-width: $v-max-width-2k;
   object-fit: cover;
   overflow: hidden;
+  filter: saturate(130%) contrast(110%);
 }
 
 .hero_section--container {
