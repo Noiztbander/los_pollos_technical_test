@@ -46,7 +46,7 @@
     }
   }
 
-  @media (width <= $v-max-mobile-width) {
+  @media only screen and (max-width: $v-max-mobile-width) {
     .partners_info {
       flex-direction: column;
       align-items: center;

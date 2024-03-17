@@ -128,7 +128,7 @@
   animation: open-menu 0.3s ease forwards;
 }
 
-@media (width <= $v-max-mobile-width) {
+@media only screen and (max-width: $v-max-mobile-width) {
   :root {
     --header-menu-height: 300px;
   }

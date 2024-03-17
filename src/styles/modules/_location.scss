@@ -49,7 +49,7 @@
   }
 }
 
-@media (width <= $v-max-mobile-width) {
+@media only screen and (max-width: $v-max-mobile-width) {
   .location_section {
     flex-direction: column;
 

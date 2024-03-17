@@ -79,7 +79,7 @@
     }
   }
 
-  @media (width <= $v-max-mobile-width) {
+  @media only screen and (max-width: $v-max-mobile-width) {
     > section {
       flex-direction: column;
       align-items: center;
@@ -114,7 +114,7 @@
     background-color: $c-black-secondary;
   }
 
-  @media (width <= $v-max-mobile-width) {
+  @media only screen and (max-width: $v-max-mobile-width) {
     .footer_license {
       p {
         width: 100%;

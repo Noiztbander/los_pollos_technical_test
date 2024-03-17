@@ -101,7 +101,7 @@
     }
   }
 
-  @media (width <= $v-max-tablet-width) {
+  @media only screen and (max-width: $v-max-tablet-width) {
     .product_gallery {
       .products_list {
         grid-template-columns: repeat(3, 1fr);
@@ -110,7 +110,7 @@
     }
   }
 
-  @media (width <= $v-max-mobile-width) {
+  @media only screen and (max-width: $v-max-mobile-width) {
     .product_gallery {
       .products_list {
         height: 300px;

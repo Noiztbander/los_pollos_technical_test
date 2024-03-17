@@ -82,7 +82,7 @@ $video_height: 100vh;
     }
   }
 
-  @media (width <= $v-max-mobile-width) {
+  @media only screen and (max-width: $v-max-mobile-width) {
     .hero_section {
       h1 {
         width: 100%;
