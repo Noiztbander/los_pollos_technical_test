@@ -1,0 +1,22 @@
+[data-inviewport='title-show-up'] {
+  transition: 0.5s;
+  transform: translateY(50%);
+  opacity: 0;
+}
+[data-inviewport='title-show-up'].is-inViewport {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 0.5s;
+}
+
+[data-inviewport='image-show-up'] {
+  transition: 0.5s;
+  transform: translateY(-80%) scale(70%);
+  opacity: 0;
+}
+[data-inviewport='image-show-up'].is-inViewport {
+  opacity: 1;
+  transform: translateY(0%) scale(100%);
+  transition: 0.5s;
+}
+
