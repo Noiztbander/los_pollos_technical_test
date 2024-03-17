@@ -1,6 +1,4 @@
 import './main.scss'
-import './assets/fonts/Marcheile-Bold-Condensed.woff'
-import './assets/fonts/Marcheile-Bold-Condensed.woff2'
 /* DO NOT EDIT ABOVE THIS LINE. You can start editing here. */
 
 /**
