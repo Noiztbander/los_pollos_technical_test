@@ -1,4 +1,5 @@
 import { createHtmlPrimaryButton, generateUniqueId } from './utils'
+import { getImageSrc } from './utils'
 
 const cartContainerElement = document.getElementById('cart_section')
 const cartListElement = document.getElementById('cart_products--list')
@@ -20,7 +21,7 @@ function createHtmlProductList(product) {
   productListElement.dataset.uniqueId = uniqueId
   productListElement.dataset.priceValue = getProductPrice(product)
   productListElement.innerHTML = `
-  <div class='image_container'><img src="${product.menuImageUrl}"></div>
+  <div class='image_container'><img src="${getImageSrc(product.menuId)}"></div>
   <p>${product.menuName}</p>
   <h3>${getProductTitlePrice(product)}</h3>
   `

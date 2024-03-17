@@ -1,6 +1,7 @@
 import menuData from './menu.json'
 import { addCartProduct } from './cart'
 import { createHtmlPrimaryButton } from './utils'
+import { getImageSrc } from './utils'
 
 const INITIAL_SELECTED_PRODUCT = menuData.menuList[0]
 const selectedProductInformationElement = document.getElementById(
@@ -13,7 +14,7 @@ const productsRowElement = document.getElementById('products_list')
 
 function createHtmlImage(product) {
   const productImageElement = document.createElement('img')
-  productImageElement.setAttribute('src', product.menuImageUrl)
+  productImageElement.setAttribute('src', getImageSrc(product.menuId))
   productImageElement.setAttribute('alt', product.menuDescription)
   productImageElement.setAttribute('id', product.menuId)
   return productImageElement

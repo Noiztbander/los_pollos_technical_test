@@ -3,5 +3,6 @@
 
 @font-face {
   font-family: marcheile;
-  src: url('src/assets/fonts/Marcheile-bold-Condensed.woff');
+  src: local('marcheile'),
+    url(@/assets/fonts/Marcheile-bold-Condensed.woff) format('truetype');
 }

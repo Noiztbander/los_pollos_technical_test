@@ -1,6 +1,7 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
+import chicken3DUrl from '../../assets/three/chicken/chicken.glb?url'
 
 let camera, scene, renderer, model, controls
 const chickenHtmlElement = document.getElementById('chicken_3d')
@@ -32,7 +33,7 @@ function initThreeJs() {
   scene.add(hemiLight)
 
   const loader = new GLTFLoader()
-  loader.load('src/assets/three/chicken/chicken.glb', function (geometry) {
+  loader.load(chicken3DUrl, function (geometry) {
     model = geometry.scene
     model.position.set(5, 0, 0)
 
