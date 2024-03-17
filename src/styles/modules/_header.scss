@@ -87,6 +87,7 @@
 .nav_menu {
   position: fixed;
   z-index: 500;
+  min-height: var(--header-menu-height);
   height: var(--header-menu-height);
   top: calc(var(--header-menu-height) * -1);
   background-color: $c-white;
@@ -129,7 +130,7 @@
 
 @media (width <= $v-max-mobile-width) {
   :root {
-    --header-menu-height: 50vh;
+    --header-menu-height: 300px;
   }
 
   .nav_menu {
