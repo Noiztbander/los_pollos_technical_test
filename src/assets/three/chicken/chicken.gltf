@@ -1,0 +1,183 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 240576,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 41617,
+      "max": [
+        -3.07719993591309,
+        0.194000065326691,
+        4.62709999084473
+      ],
+      "min": [
+        -5.12150001525879,
+        -1.62680006027222,
+        -0.929199814796448
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 41617,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 41617,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 41617,
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "generator": "Adobe Substance 3D Painter 8.2.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 962304,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 499404,
+      "byteOffset": 962304,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 499404,
+      "byteOffset": 1461708,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 665872,
+      "byteOffset": 1961112,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 332936,
+      "byteOffset": 2626984,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 2959920,
+      "uri": "chicken.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "_15513_Fried_Chicken_Drumstick_v1_15513_Fried_Chicken_Drumstick_v1default_baseColor_1001.png"
+    },
+    {
+      "uri": "_15513_Fried_Chicken_Drumstick_v1_15513_Fried_Chicken_Drumstick_v1default_occlusionRoughnessMetallic_1001.png"
+    },
+    {
+      "uri": "_15513_Fried_Chicken_Drumstick_v1_15513_Fried_Chicken_Drumstick_v1default_normal_1001.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "OPAQUE",
+      "name": "_15513_Fried_Chicken_Drumstick_v1_15513_Fried_Chicken_Drumstick_v1default_1001",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "15513_Fried_Chicken_Drumstick_v1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 2,
+            "POSITION": 1,
+            "TANGENT": 3,
+            "TEXCOORD_0": 4
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "15513_Fried_Chicken_Drumstick_v1.obj"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "15513_Fried_Chicken_Drumstick_v1"
+    },
+    {
+      "mesh": 0,
+      "name": "15513_Fried_Chicken_Drumstick_v1"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9985,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

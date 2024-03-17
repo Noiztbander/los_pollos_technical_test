@@ -76,3 +76,20 @@ $video_height: 100vh;
     }
   }
 }
+
+.presentation_section {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $c-white;
+  padding: 50px;
+
+  h1 {
+    z-index: 100;
+    width: 50vw;
+    font-family: marcheile;
+    font-size: 80px;
+    transform: translateY(-20px);
+  }
+}
