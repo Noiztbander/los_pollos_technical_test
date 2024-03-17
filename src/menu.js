@@ -45,6 +45,16 @@ function setSelectedProduct(selectedProduct) {
   <p>${selectedProduct.menuDescription}</p>
   <h3>Price: <span>${selectedProduct.menuPrice}€</span></h3>
   `
+
+  if (selectedProduct.menuDiscoundPercent) {
+    const newSaleElement = document.createElement('div')
+    newSaleElement.classList.add('sale_container')
+    newSaleElement.innerHTML = `
+    <p>Discount: ${selectedProduct.menuDiscoundPercent}%</p>
+    `
+    selectedProductInformationElement.appendChild(newSaleElement)
+  }
+
   selectedProductInformationElement.appendChild(
     createHtmlPrimaryButton('Add to cart', () =>
       addCartProduct(selectedProduct)
