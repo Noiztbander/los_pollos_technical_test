@@ -15,6 +15,7 @@ $video_height: 100vh;
 .video_src--bg {
   position: absolute;
   height: $video_height;
+  min-height: 500px;
   top: 0;
   z-index: 0;
   width: 100%;
