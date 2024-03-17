@@ -2,6 +2,7 @@
 @import 'animations';
 
 .layout_container {
+  position: relative;
   max-width: $v-max-desktop-width;
   width: 100%;
   display: flex;

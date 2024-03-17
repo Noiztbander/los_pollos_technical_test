@@ -73,6 +73,10 @@ $video_height: 100vh;
       min-width: 200px;
       min-height: 200px;
       filter: drop-shadow(rgba(0, 0, 0, 0.3) 10px 30px 50px);
+      -moz-filter: drop-shadow(rgba(0, 0, 0, 0.3) 10px 30px 50px);
+      -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.3) 10px 30px 50px);
+      -o-filter: drop-shadow(rgba(0, 0, 0, 0.3) 10px 30px 50px);
+      -ms-filter: drop-shadow(rgba(0, 0, 0, 0.3) 10px 30px 50px);
     }
   }
 

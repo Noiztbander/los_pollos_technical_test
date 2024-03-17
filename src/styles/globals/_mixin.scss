@@ -10,12 +10,13 @@
   h1 {
     color: $c-chicken-secondary-dark;
     font-size: min(max(10vw, 12px), 70px);
+    transform: translateY(-10px);
     font-family: marcheile;
-    padding-bottom: 30px;
     text-align: center;
   }
 
   p {
+    padding-top: 30px;
     color: $c-black-secondary;
     font-weight: bold;
     text-align: center;
