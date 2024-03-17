@@ -2,6 +2,9 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  build: {
+    minify: false,
+  },
   publicDir: 'fake_dir_so_nothing_gets_copied',
   resolve: {
     alias: {
