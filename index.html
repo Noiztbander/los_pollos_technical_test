@@ -32,30 +32,44 @@
           </svg>
         </button>
         <nav id="nav_menu" class="nav_menu">
-          <img
-            class="logo_nav--container"
-            alt="logo_chicken"
-            src="./src/assets/images/header/lph-logo.png"
-          />
+          <a href="#home_section">
+            <img
+              class="logo_nav--container"
+              alt="logo_chicken"
+              src="./src/assets/images/header/lph-logo.png"
+            />
+          </a>
           <ul>
-            <a href="#home_section" class="route">Home</a>
-            <a href="#gastronomy_section" class="route">Gastronomy</a>
-            <a href="#location_section" class="route">Location</a>
-            <a href="#footer_section" class="route">Contact</a>
+            <li>
+              <a href="#gastronomy_section" class="route">Menu</a>
+            </li>
+            <li>
+              <a href="#location_section" class="route">Location</a>
+            </li>
+            <li>
+              <a href="#footer_section" class="route">Info</a>
+            </li>
           </ul>
         </nav>
       </div>
 
-      <header id="home_section">
+      <header id="home_section" class="hero_section--container">
         <section class="hero_section">
+          <a href="#gastronomy_section" class="order_btn">Order Now</a>
+
           <img
             class="logo_container"
             alt="logo_chicken"
             src="./src/assets/images/header/lph-logo.png"
           />
-          <span class="material-symbols-outlined expand_more--icon">
-            expand_more
-          </span>
+
+          <h1>Get famous chicken <br> however you want it</h1>
+
+          <a href="#gastronomy_section">
+            <span class="material-symbols-outlined expand_more--icon">
+              expand_more
+            </span>
+          </a>
         </section>
         <video
           class="video_src--bg"
@@ -72,6 +86,13 @@
       </header>
 
       <section id="gastronomy_section" class="gastronomy_section">
+        <div class="title">
+          <h1>Menu</h1>
+          <p>
+            Menu varies by location. Please contact your local restaurant to
+            verify menu availability.
+          </p>
+        </div>
         <div class="product_gallery">
           <div id="products_list" class="products_list"></div>
           <div id="selected_product" class="selected_product">
@@ -88,15 +109,20 @@
       </section>
 
       <section id="cart_section" class="cart_section">
-        <div>
-          <h3>Products</h3>
-          <ul id="cart_products--list" class="cart_products--list"></ul>
-        </div>
-        <div>
-          <h3>Total</h3>
-          <p id="cart_products--base-price">
-          </p>
-          <h2 id="cart_products--total-price" class="cart_products--total-price"></h2>
+        <div class="title"><h1>Cart</h1></div>
+        <div class="cart_info">
+          <div>
+            <h3>Products</h3>
+            <ul id="cart_products--list" class="cart_products--list"></ul>
+          </div>
+          <div>
+            <h3>Total</h3>
+            <p id="cart_products--base-price"></p>
+            <h2
+              id="cart_products--total-price"
+              class="cart_products--total-price"
+            ></h2>
+          </div>
         </div>
       </section>
 
@@ -105,6 +131,14 @@
           <h1>Los pollos hermanos</h1>
           <h2>Madrid</h2>
           <p>Valenzuela, 4</p>
+          <p>
+            The first establishment in Spain to incorporate the new company
+            image. The restaurants sporting the new image have been warmly
+            welcomed by the public, with growth above 30% in those premises with
+            the new Los Pollos Hermanos identity. Los Pollos Hermanos, flagship
+            brand of Eat Out restoration group, announced the opening its first
+            restaurant in Madrid, at Puerta de Alcalá.
+          </p>
           <button class="primary_btn">Book a table</button>
         </div>
         <gmp-map
@@ -152,6 +186,7 @@
         </div>
       </footer>
     </main>
+    <!-- <section id="turbulence_bg" class="turbulence_bg"></section> -->
 
     <!-- Do not edit below this line -->
     <script

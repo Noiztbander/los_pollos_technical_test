@@ -1,5 +1,6 @@
 import { createHtmlPrimaryButton, generateUniqueId } from './utils'
 
+const cartContainerElement = document.getElementById('cart_section')
 const cartListElement = document.getElementById('cart_products--list')
 const cartTotalPriceElement = document.getElementById(
   'cart_products--total-price'
@@ -100,4 +101,15 @@ function setTotalPriceTitle() {
 function updateCartTotalPrice() {
   setBasePriceTitle()
   setTotalPriceTitle()
+  toggleCartVisualization()
+}
+
+function toggleCartVisualization() {
+  if (productsNodesList.length > 0) {
+    cartContainerElement.classList.remove('cart_closed')
+    cartContainerElement.classList.add('cart_opened')
+  } else {
+    cartContainerElement.classList.remove('cart_opened')
+    cartContainerElement.classList.add('cart_closed')
+  }
 }

@@ -1,8 +1,15 @@
 .primary_btn {
-	height: 50px;
-	padding: 20px;
-  border: solid black 1px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  height: 50px;
+  padding: 20px;
+  border: solid $c-chicken-secondary-light 2px;
+  color: $c-chicken-secondary-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.primary_btn:hover {
+background-color: $c-white-secondary;
+transition: 0.3s;
 }

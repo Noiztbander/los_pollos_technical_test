@@ -1,0 +1,22 @@
+@mixin default_black_title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  background-color: $c-chicken-primary-light;
+
+  h1 {
+    color: $c-chicken-secondary-dark;
+    font-size: 100px;
+    font-family: marcheile;
+    padding-bottom: 30px;
+  }
+
+  p {
+    color: $c-white;
+    color: $c-chicken-secondary-dark;
+    font-weight: bold;
+  }
+}

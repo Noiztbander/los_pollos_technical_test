@@ -1,14 +1,14 @@
 .location_section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  padding: 50px !important;
-  background-color: $c-white-secondary;
+  flex-direction: row;
+  background-color: $c-black;
 
   gmp-map {
-    height: 500px;
-    width: 500px;
+    height: 800px;
+    min-width: 50vw;
+    width: 50vw;
   }
 
   .location_info {
@@ -16,15 +16,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 100%;
     padding-bottom: 30px;
 
     h1 {
+      font-family: marcheile;
+      font-size: 70px;
       font-weight: bolder;
+      color: $c-white;
+      padding-bottom: 20px;
     }
     h2 {
       font-weight: bolder;
       padding-bottom: 20px;
+      font-size: 50px;
+      color: $c-white;
+    }
+    p {
+      padding: 10px 50px;
+      color: $c-white;
+      text-align: center;
     }
 
     button {
