@@ -3,7 +3,7 @@ import productChickenBurgerUrl from '@/assets/images/gastro/gasto-item-chicken-b
 import productChickenWingsUrl from '@/assets/images/gastro/gasto-item-chicken-wings.jpg'
 import productFrenchFriesUrl from '@/assets/images/gastro/gasto-item-french-fries.jpg'
 import productFriedChickenUrl from '@/assets/images/gastro/gasto-item-fried-chicken.jpg'
-import productMilkShakeUrl from '@/assets/images/gastro/gasto-item-milksake.jpg'
+import productMilkShakeUrl from '@/assets/images/gastro/gasto-item-milkshake.jpg'
 
 export function createHtmlPrimaryButton(text, action) {
   const buttonElement = document.createElement('button')

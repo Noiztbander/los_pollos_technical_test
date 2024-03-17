@@ -7,6 +7,13 @@ export default defineConfig({
   build: {
     minify: false,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/styles/globals/_all.scss";`
+      }
+    }
+  },
   resolve: {
     alias: {
       // eslint-disable-next-line no-undef
