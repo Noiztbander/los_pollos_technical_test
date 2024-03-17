@@ -42,7 +42,7 @@ function setSelectedProduct(selectedProduct) {
     'product_information--container'
   )
   selectedProductInformationElement.innerHTML = `
-  <h1 data-inviewport="title-show-up">${selectedProduct.menuName}</h1>
+  <h1>${selectedProduct.menuName}</h1>
   <p>${selectedProduct.menuDescription}</p>
   <h3>Price: <span>${selectedProduct.menuPrice}€</span></h3>
   `
