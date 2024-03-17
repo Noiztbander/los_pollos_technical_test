@@ -47,7 +47,10 @@ camera.lookAt(0, 0, 0)
 function animate() {
   requestAnimationFrame(animate)
 
-  model.rotation.y += -0.01
+  if (model) {
+    model.rotation.y += -0.01
+  }
+
   controls.update()
 
   renderer.render(scene, camera)

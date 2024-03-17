@@ -25,11 +25,17 @@
           height: 100%;
           width: 100%;
           object-fit: cover;
+          filter: saturate(50%) brightness(70%);
+          transition: 0.3s;
         }
       }
 
       .product_container:hover {
-        border: solid $c-chicken-secondary-light 4px;
+        img {
+          transition: 0.3s;
+          transform: scale(103%);
+          filter: saturate(120%);
+        }
       }
     }
 

@@ -1,2 +1,48 @@
 .partners_section {
+  background-color: $c-black;
+  min-height: unset !important;
+
+  .title {
+    @include default_black_title;
+  }
+
+  .partners_info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20%;
+    padding: 50px;
+
+    .partner_fever--container {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        color: $c-white;
+        padding-bottom: 20px;
+        font-weight: bold;
+      }
+
+      img {
+        height: 200px;
+        width: 400px;
+      }
+    }
+
+    .partner_lph--container {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        color: $c-white;
+        padding-bottom: 20px;
+        font-weight: bold;
+      }
+
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    }
+  }
 }

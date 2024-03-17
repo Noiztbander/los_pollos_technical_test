@@ -50,7 +50,7 @@
         justify-content: flex-start;
         align-items: center;
         gap: 10px;
-        border-bottom: 2px $c-chicken-secondary-light solid;
+        border-bottom: 3px $c-chicken-secondary-light solid;
 
         h3 {
           font-weight: bold;
@@ -87,7 +87,7 @@
         }
       }
       .product_list:hover {
-        border-bottom: 2px $c-chicken-primary-light solid;
+        border-bottom: 3px $c-chicken-primary-light solid;
       }
     }
 
@@ -96,6 +96,10 @@
       color: $c-chicken-primary-dark;
       font-weight: bolder;
       font-size: 50px;
+    }
+
+    .pay_btn {
+      margin-top: 20px;
     }
   }
 }

@@ -1,7 +1,7 @@
 .primary_btn {
   height: 50px;
   padding: 20px;
-  border: solid $c-chicken-secondary-light 2px;
+  border: solid $c-chicken-secondary-light 3px;
   color: $c-chicken-secondary-light;
   display: flex;
   justify-content: center;
@@ -10,6 +10,7 @@
 }
 
 .primary_btn:hover {
-background-color: $c-white-secondary;
-transition: 0.3s;
+  border: solid $c-chicken-primary-light 3px;
+  color: $c-chicken-primary-light;
+  transition: 0.3s;
 }
