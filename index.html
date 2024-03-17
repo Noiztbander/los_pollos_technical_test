@@ -151,12 +151,20 @@
             brand of Eat Out restoration group, announced the opening its first
             restaurant in Madrid, at Puerta de Alcalá.
           </p>
-          <button class="primary_btn">Book a table</button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/Puerta+De+Alcal%C3%A1/@40.417996,-3.689149,17z/data=!4m6!3m5!1s0xd42289b8d56a45b:0x51d7255fece5b7da!8m2!3d40.4189446!4d-3.6889546!16s%2Fg%2F1thqc4s1?hl=es-ES&entry=ttu"
+            class="primary_btn"
+            >See full map</a
+          >
         </div>
         <gmp-map
           center="40.41885757446289,-3.689152240753174"
           zoom="17"
           map-id="63b2b9e5d41c2b9c"
+          gesture-handling="greedy"
+          disable-default-ui="true"
         >
           <gmp-advanced-marker
             position="40.41885757446289,-3.689152240753174"
@@ -243,6 +251,7 @@
       async
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeMDzJPKs_xcxz0kI9qIwgDsF7bABSSkE&callback=console.debug&libraries=maps,marker&v=beta"
     ></script>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
